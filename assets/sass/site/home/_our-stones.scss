@@ -1,0 +1,192 @@
+.home-our-stones {
+	padding-top: 4.9rem;
+	padding-bottom: 3.3rem;
+	@media screen and (max-width: 767px) {
+		padding-top: 2.45rem;
+		padding-bottom: 2.45rem;
+	}
+
+	&__container {
+		max-width: 1200px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		@media screen and (max-width: 767px) {
+			padding-top: 0;
+			padding-bottom: 25px;
+		}
+	}
+
+	&__text {
+		margin-bottom: 2.2rem;
+		@media screen and (max-width: 767px) {
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__carousel-wrapper {
+		position: relative;
+	}
+
+	&__wrapper {
+		@media screen and (max-width: 800px) {
+			@include center-block;
+			padding-left: 2rem;
+			padding-right: 2rem;
+		}
+	}
+
+	&__item {
+		position: relative;
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&__item-description {
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 52px 29px 52px 29px;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		transition: all .5s;
+
+		@media screen and (max-width: 799px) {
+			padding: 52px 15px 52px 15px;
+		}
+	}
+
+	&__item-description:hover {
+		align-items: center;
+		background-color: rgba(191, 150, 73, 0.94);
+	}
+
+	&__item-description-wrapper {
+		text-align: center;
+	}
+
+	&__arrow {
+		display: inline-block;
+		cursor: pointer;
+		width: 45px;
+		height: 45px;
+		background-color: $color__light-grey;
+		border: none;
+		border-radius: 50%;
+		opacity: .5;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+
+		@media screen and (max-width: 800px) {
+			background-color: $color__dark-blue;
+			width: 25px;
+			height: 25px;
+		}
+	}
+
+	&__arrow-left {
+		left: 15px;
+		@media screen and (max-width: 800px) {
+			left: 8px;
+		}
+	}
+
+	&__arrow-right {
+		right: 15px;
+		@media screen and (max-width: 800px) {
+			right: 8px;
+		}
+	}
+
+	&__arrow-icon {
+		display: inline-block;
+		width: 0; 
+		height: 0;
+		position: relative;
+	}
+
+	&__arrow-icon-left {
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent; 
+		border-right: 10px solid $color__dark-blue;
+		top: 13px;
+		left: 15px;
+
+    	@media screen and (max-width: 800px) {
+    		border-top: 5px solid transparent;
+			border-bottom: 5px solid transparent; 
+			border-right: 5px solid $color__light-grey;
+			top: -1px;
+			left: 9px;
+    	}
+	}
+
+	&__arrow-icon-right {
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-left: 10px solid $color__dark-blue;
+		top: 13px;
+		left: 19px;
+
+		@media screen and (max-width: 800px) {
+			border-top: 5px solid transparent;
+			border-bottom: 5px solid transparent;
+			border-left: 5px solid $color__light-grey;
+			top: -1px;
+			left: 11px;
+		}
+	} 
+
+	&__item-heading {
+		color: #ffffff;
+		font-size: 1.15rem;
+		line-height: 1.2rem;
+		margin-top: 0;
+		margin-bottom: 0.9rem;
+
+		@media screen and (max-width: 767px) {
+			font-size: .8rem;
+			line-height: .8rem;
+		}
+	}
+
+	&__item-text {
+		color: #ffffff;
+		font-size: 1rem;
+		line-height: 1.8;
+		margin-top: 0;
+		margin-bottom: 1.2rem;
+		display: none;
+		opacity: 0;
+		transition: all .5s;
+
+		@media screen and (max-width: 1650px) {
+			font-size: .8rem;
+			line-height: 1.2rem;
+		}
+		@media screen and (max-width: 767px) {
+			font-size: .6rem;
+			line-height: .9rem;
+		}
+	}
+
+	&__item-button {
+		transition: all .5s;
+	}
+
+	&__item-description:hover > .home-our-stones__item-description-wrapper > .home-our-stones__item-text {
+		display: block;
+		opacity: 1;
+	}
+
+	&__item-description:hover > .home-our-stones__item-description-wrapper > .home-our-stones__item-button {
+		background-color: $color__light-grey;
+		color: $color__dark-blue;
+	}
+
+}

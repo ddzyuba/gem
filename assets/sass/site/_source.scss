@@ -1,0 +1,244 @@
+.source {
+	
+	.entry-header {
+		margin-bottom: 2.3rem;
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 1.45rem;
+		}
+	}
+
+	.entry-content {
+		@include center-block;
+		max-width: 1100px;
+		margin-bottom: 5.2rem;
+		color: $color__dark-blue;
+		font-size: 0.85rem;
+		line-height: 1.5rem;
+		text-align: center;
+		@media screen and (max-width: 1500px) {
+			margin-bottom: 3rem;
+		}
+		@media screen and (max-width: 767px) {
+			font-size: .6rem;
+			line-height: .9rem;
+			margin-bottom: 1.15rem;
+		}
+
+		p:first-child {
+			margin-top: 0;
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__map-wrapper {
+		@include center-block;
+		max-width: 1600px;
+		position: relative;
+
+		@media screen and (max-width: 1672px) {
+			max-width: 1200px;
+		}
+		@media screen and (max-width: 1272px) {
+			max-width: 800px;
+		}
+		@media screen and (max-width: 872px) {
+			max-width: 600px;
+		}
+		@media screen and (max-width: 767px) {
+			margin-bottom: .55rem;
+		}	
+	}
+
+	&__map-links {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+
+	&__map-link {
+		background-color: $color__dark-blue;
+		border-radius: 3px;
+		color: $color__light-grey;
+		display: inline-block;
+		font-size: .8rem;
+		line-height: 1.3rem;
+		padding: 0 10px 0 10px;
+		position: absolute;
+		text-decoration: none;
+		z-index: 2;
+
+		@media screen and (max-width: 1272px) {
+			font-size: .5rem;
+			line-height: .9rem;
+			padding: 0 5px 0 5px;
+		}
+		@media screen and (max-width: 650px) {
+			display: none;
+		}
+	}
+
+	&__map-link-madagascar {
+		top: 69%;
+		right: 32.2%;
+
+		@media screen and (max-width: 1672px) {
+			top: 68%;
+			right: 29.7%;
+		}
+		@media screen and (max-width: 1272px) {
+			top: 68%;
+			right: 31%;
+		}
+		@media screen and (max-width: 872px) {
+			top: 68%;
+			right: 28.5%;
+		}
+	}
+
+	&__map-link-mozambique {
+		top: 65%;
+		right: 34.6%;
+
+		@media screen and (max-width: 1672px) {
+			top: 63%;
+			right: 32%;
+		}
+		@media screen and (max-width: 1272px) {
+			top: 63%;
+			right: 33.5%;
+		}
+		@media screen and (max-width: 872px) {
+			top: 61.3%;
+			right: 30.5%;
+		}
+	}
+
+	&__map-link-myanmar {
+		top: 40.5%;
+		right: 17.6%;
+		@media screen and (max-width: 1672px) {
+			top: 38.5%;
+			right: 15.6%;
+		}
+		@media screen and (max-width: 1272px) {
+			right: 16.6%;
+		}
+		@media screen and (max-width: 872px) {
+			top: 34.5%;
+			right: 14.6%;
+		}
+	}
+
+	&__map-link-srilanka {
+		top: 48.6%;
+		right: 22.3%;
+		@media screen and (max-width: 1672px) {
+			top: 47.2%;
+			right: 20.3%;
+		}
+		@media screen and (max-width: 1272px) {
+			right: 21.3%;
+		}
+		@media screen and (max-width: 872px) {
+			top: 45%;
+			right: 18.8%;
+		}
+	}
+
+	&__map-link-tanzania {
+		top: 54%;
+		right: 36.4%;
+
+		@media screen and (max-width: 1672px) {
+			top: 52%;
+			right: 34.4%;
+		}
+		@media screen and (max-width: 1272px) {
+			top: 52%;
+			right: 35.6%;
+		}
+		@media screen and (max-width: 872px) {
+			top: 51%;
+			right: 33%;
+		}
+	}
+
+	&__map-link-vietnam {
+		top: 45%;
+		right: 14%;
+
+		@media screen and (max-width: 1672px) {
+			top: 43.5%;
+			right: 12%;
+		}
+		@media screen and (max-width: 1272px) {
+			right: 13%;
+		}
+		@media screen and (max-width: 872px) {
+			top: 41.5%;
+			right: 11%;
+		}
+	}
+
+	&__map-link::before {
+		display: inline-block;
+		position: absolute;
+		content: "";
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: $color__dark-blue;
+		top: 27px;
+		left: -12px;
+
+		@media screen and (max-width: 1272px) {
+			width: 5px;
+			height: 5px;
+			top: 18px;
+			left: -5px;
+		}
+	}
+
+	&__map-image {
+		position: relative;
+		width: 100%;
+		z-index: 1;
+	}
+
+	&__mobile-links {
+		display: flex;
+		flex-wrap: wrap;
+		@media screen and (min-width: 768px) {
+			display: none;
+		}
+	}
+
+	&__mobile-link {
+		display: block;
+		color: $color__light-grey;
+		background-color: $color__navy-blue;
+		font-size: .6rem;
+		line-height: .9rem;
+		width: 48%;
+		margin-right: 4%;
+		margin-bottom: 1.75rem;
+		padding: 10px;
+		text-align: center;
+		text-decoration: none;
+	}
+}
+
+[class="source__mobile-link"]:nth-of-type(even) {
+	margin-right: 0;
+}
+
+[class="source__mobile-link"]:nth-of-type(5n),
+[class="source__mobile-link"]:nth-of-type(6n) {
+	margin-bottom: 0;
+}

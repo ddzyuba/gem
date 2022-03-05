@@ -1,0 +1,39 @@
+.home-partners {
+
+	&__wrapper {
+		@include center-block;
+		max-width: 1200px;
+	}
+
+	&__text {
+		margin-bottom: 1.7rem;
+		@media screen and (max-width: 767px) {
+			margin-bottom: 1.15rem;
+		}
+	}
+
+	&__images {
+		filter: grayscale(1) opacity(0.4);
+		text-align: center;
+	}
+
+	&__image {
+		margin-right: 2.5rem;
+		margin-bottom: 2.5rem;
+
+		@media screen and (max-width: 1100px) {
+			height: 2rem;
+			margin-right: 1.5rem;
+			margin-bottom: 1.5rem;
+		}
+		@media screen and (max-width: 767px) {
+			height: 1rem;
+			margin-right: 1rem;
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+[class="home-partners__image"]:last-of-type {
+	margin-right: 0;
+}

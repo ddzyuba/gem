@@ -1,0 +1,81 @@
+.home-who-we-are {
+	background-color: $color__dark-blue;
+	position: relative;
+
+	@media screen and (max-width: 1100px) {
+		background-color: initial;
+		margin-top: -20px;
+	}
+	
+	&__container {
+		background-color: #173a55;
+		padding-top: 3.1rem;
+		padding-bottom: 4.5rem;
+
+		@media screen and (max-width: 1100px) {
+			padding-top: 3.6rem;
+		}
+		@media screen and (max-width: 767px) {
+			padding-bottom: 1.5rem;
+		}
+	}
+
+	&__wrapper {
+		@media screen and (max-width: 1100px) {
+			text-align: center;
+		}
+	}
+
+	&__image {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position-x: center;
+		width: 50%;
+		height: 555px;
+		border: 15px solid #ffffff;
+		box-shadow: 20px 10px 30px rgba(0, 0, 0, .16);
+		position: absolute;
+		top: -50px;
+		left: 1.8rem;
+		
+		z-index: 3;
+
+		@media screen and (min-width: 1600px) {
+			left: calc( ( 100% - 1528px ) / 2 );
+			width: 770px;
+		}
+		@media screen and (max-width: 1774px) {
+			height: 555px;
+		}
+		@media screen and (max-width: 1500px) {
+			height: 580px;
+			top: -60px;
+		}
+		@media screen and (max-width: 1200px) {
+			height: 630px;
+			top: -70px;
+		}
+		@media screen and (max-width: 1100px) {
+			border: 5px solid #ffffff;
+			width: 604px;
+			height: 410px;
+			position: relative;
+			top: 50px;
+			left: initial;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		@media screen and (max-width: 767px) {
+			width: 302px;
+			height: 205px;
+		}
+	}
+
+	&__wrapper {
+		@media screen and (min-width: 1101px) {
+			padding-left: 55%;
+		}
+	}
+}
+
+
